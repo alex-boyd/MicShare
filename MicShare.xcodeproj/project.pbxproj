@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA81E5D022345AD500FDAE11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */; };
+		FA81E5D222345AD500FDAE11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5D122345AD500FDAE11 /* ViewController.swift */; };
+		FA81E5D522345AD500FDAE11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81E5D322345AD500FDAE11 /* Main.storyboard */; };
+		FA81E5D722345AD600FDAE11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA81E5D622345AD600FDAE11 /* Assets.xcassets */; };
+		FA81E5DA22345AD600FDAE11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81E5D822345AD600FDAE11 /* LaunchScreen.storyboard */; };
+		FA81E5E522345AD600FDAE11 /* MicShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5E422345AD600FDAE11 /* MicShareTests.swift */; };
+		FA81E5F022345AD600FDAE11 /* MicShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5EF22345AD600FDAE11 /* MicShareUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA81E5E122345AD600FDAE11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA81E5C422345AD400FDAE11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA81E5CB22345AD500FDAE11;
+			remoteInfo = MicShare;
+		};
+		FA81E5EC22345AD600FDAE11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA81E5C422345AD400FDAE11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA81E5CB22345AD500FDAE11;
+			remoteInfo = MicShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA81E5CC22345AD500FDAE11 /* MicShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA81E5D122345AD500FDAE11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA81E5D422345AD500FDAE11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA81E5D622345AD600FDAE11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA81E5D922345AD600FDAE11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA81E5DB22345AD600FDAE11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA81E5E022345AD600FDAE11 /* MicShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA81E5E422345AD600FDAE11 /* MicShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicShareTests.swift; sourceTree = "<group>"; };
+		FA81E5E622345AD600FDAE11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA81E5EB22345AD600FDAE11 /* MicShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA81E5EF22345AD600FDAE11 /* MicShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicShareUITests.swift; sourceTree = "<group>"; };
+		FA81E5F122345AD600FDAE11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA81E5C922345AD500FDAE11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA81E5DD22345AD600FDAE11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA81E5E822345AD600FDAE11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA81E5C322345AD400FDAE11 = {
+			isa = PBXGroup;
+			children = (
+				FA81E5CE22345AD500FDAE11 /* MicShare */,
+				FA81E5E322345AD600FDAE11 /* MicShareTests */,
+				FA81E5EE22345AD600FDAE11 /* MicShareUITests */,
+				FA81E5CD22345AD500FDAE11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA81E5CD22345AD500FDAE11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA81E5CC22345AD500FDAE11 /* MicShare.app */,
+				FA81E5E022345AD600FDAE11 /* MicShareTests.xctest */,
+				FA81E5EB22345AD600FDAE11 /* MicShareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA81E5CE22345AD500FDAE11 /* MicShare */ = {
+			isa = PBXGroup;
+			children = (
+				FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */,
+				FA81E5D122345AD500FDAE11 /* ViewController.swift */,
+				FA81E5D322345AD500FDAE11 /* Main.storyboard */,
+				FA81E5D622345AD600FDAE11 /* Assets.xcassets */,
+				FA81E5D822345AD600FDAE11 /* LaunchScreen.storyboard */,
+				FA81E5DB22345AD600FDAE11 /* Info.plist */,
+			);
+			path = MicShare;
+			sourceTree = "<group>";
+		};
+		FA81E5E322345AD600FDAE11 /* MicShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA81E5E422345AD600FDAE11 /* MicShareTests.swift */,
+				FA81E5E622345AD600FDAE11 /* Info.plist */,
+			);
+			path = MicShareTests;
+			sourceTree = "<group>";
+		};
+		FA81E5EE22345AD600FDAE11 /* MicShareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA81E5EF22345AD600FDAE11 /* MicShareUITests.swift */,
+				FA81E5F122345AD600FDAE11 /* Info.plist */,
+			);
+			path = MicShareUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA81E5CB22345AD500FDAE11 /* MicShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA81E5F422345AD600FDAE11 /* Build configuration list for PBXNativeTarget "MicShare" */;
+			buildPhases = (
+				FA81E5C822345AD500FDAE11 /* Sources */,
+				FA81E5C922345AD500FDAE11 /* Frameworks */,
+				FA81E5CA22345AD500FDAE11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicShare;
+			productName = MicShare;
+			productReference = FA81E5CC22345AD500FDAE11 /* MicShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA81E5DF22345AD600FDAE11 /* MicShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA81E5F722345AD600FDAE11 /* Build configuration list for PBXNativeTarget "MicShareTests" */;
+			buildPhases = (
+				FA81E5DC22345AD600FDAE11 /* Sources */,
+				FA81E5DD22345AD600FDAE11 /* Frameworks */,
+				FA81E5DE22345AD600FDAE11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA81E5E222345AD600FDAE11 /* PBXTargetDependency */,
+			);
+			name = MicShareTests;
+			productName = MicShareTests;
+			productReference = FA81E5E022345AD600FDAE11 /* MicShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA81E5EA22345AD600FDAE11 /* MicShareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA81E5FA22345AD600FDAE11 /* Build configuration list for PBXNativeTarget "MicShareUITests" */;
+			buildPhases = (
+				FA81E5E722345AD600FDAE11 /* Sources */,
+				FA81E5E822345AD600FDAE11 /* Frameworks */,
+				FA81E5E922345AD600FDAE11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA81E5ED22345AD600FDAE11 /* PBXTargetDependency */,
+			);
+			name = MicShareUITests;
+			productName = MicShareUITests;
+			productReference = FA81E5EB22345AD600FDAE11 /* MicShareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA81E5C422345AD400FDAE11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = gameplaySituationsInc;
+				TargetAttributes = {
+					FA81E5CB22345AD500FDAE11 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					FA81E5DF22345AD600FDAE11 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FA81E5CB22345AD500FDAE11;
+					};
+					FA81E5EA22345AD600FDAE11 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FA81E5CB22345AD500FDAE11;
+					};
+				};
+			};
+			buildConfigurationList = FA81E5C722345AD400FDAE11 /* Build configuration list for PBXProject "MicShare" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA81E5C322345AD400FDAE11;
+			productRefGroup = FA81E5CD22345AD500FDAE11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA81E5CB22345AD500FDAE11 /* MicShare */,
+				FA81E5DF22345AD600FDAE11 /* MicShareTests */,
+				FA81E5EA22345AD600FDAE11 /* MicShareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA81E5CA22345AD500FDAE11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA81E5DA22345AD600FDAE11 /* LaunchScreen.storyboard in Resources */,
+				FA81E5D722345AD600FDAE11 /* Assets.xcassets in Resources */,
+				FA81E5D522345AD500FDAE11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA81E5DE22345AD600FDAE11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA81E5E922345AD600FDAE11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA81E5C822345AD500FDAE11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA81E5D222345AD500FDAE11 /* ViewController.swift in Sources */,
+				FA81E5D022345AD500FDAE11 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA81E5DC22345AD600FDAE11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA81E5E522345AD600FDAE11 /* MicShareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA81E5E722345AD600FDAE11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA81E5F022345AD600FDAE11 /* MicShareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA81E5E222345AD600FDAE11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA81E5CB22345AD500FDAE11 /* MicShare */;
+			targetProxy = FA81E5E122345AD600FDAE11 /* PBXContainerItemProxy */;
+		};
+		FA81E5ED22345AD600FDAE11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA81E5CB22345AD500FDAE11 /* MicShare */;
+			targetProxy = FA81E5EC22345AD600FDAE11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA81E5D322345AD500FDAE11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA81E5D422345AD500FDAE11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA81E5D822345AD600FDAE11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA81E5D922345AD600FDAE11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA81E5F222345AD600FDAE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA81E5F322345AD600FDAE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA81E5F522345AD600FDAE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8625DGRLZL;
+				INFOPLIST_FILE = MicShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gameplaySituationsInc.MicShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA81E5F622345AD600FDAE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8625DGRLZL;
+				INFOPLIST_FILE = MicShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gameplaySituationsInc.MicShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA81E5F822345AD600FDAE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8625DGRLZL;
+				INFOPLIST_FILE = MicShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gameplaySituationsInc.MicShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicShare.app/MicShare";
+			};
+			name = Debug;
+		};
+		FA81E5F922345AD600FDAE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8625DGRLZL;
+				INFOPLIST_FILE = MicShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gameplaySituationsInc.MicShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicShare.app/MicShare";
+			};
+			name = Release;
+		};
+		FA81E5FB22345AD600FDAE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8625DGRLZL;
+				INFOPLIST_FILE = MicShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gameplaySituationsInc.MicShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MicShare;
+			};
+			name = Debug;
+		};
+		FA81E5FC22345AD600FDAE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8625DGRLZL;
+				INFOPLIST_FILE = MicShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gameplaySituationsInc.MicShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MicShare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA81E5C722345AD400FDAE11 /* Build configuration list for PBXProject "MicShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA81E5F222345AD600FDAE11 /* Debug */,
+				FA81E5F322345AD600FDAE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA81E5F422345AD600FDAE11 /* Build configuration list for PBXNativeTarget "MicShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA81E5F522345AD600FDAE11 /* Debug */,
+				FA81E5F622345AD600FDAE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA81E5F722345AD600FDAE11 /* Build configuration list for PBXNativeTarget "MicShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA81E5F822345AD600FDAE11 /* Debug */,
+				FA81E5F922345AD600FDAE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA81E5FA22345AD600FDAE11 /* Build configuration list for PBXNativeTarget "MicShareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA81E5FB22345AD600FDAE11 /* Debug */,
+				FA81E5FC22345AD600FDAE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA81E5C422345AD400FDAE11 /* Project object */;
+}
