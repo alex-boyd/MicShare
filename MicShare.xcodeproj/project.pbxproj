@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EC26B63DA6BD2F4315DAFF1 /* Pods_MicShareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAB3693251279DBBA717F78 /* Pods_MicShareUITests.framework */; };
+		6C417A8A8A176365A28D2F8F /* Pods_MicShareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E296F4D8BA6514B4106EBD /* Pods_MicShareTests.framework */; };
 		FA81E5D022345AD500FDAE11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */; };
 		FA81E5D222345AD500FDAE11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5D122345AD500FDAE11 /* ViewController.swift */; };
 		FA81E5D522345AD500FDAE11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81E5D322345AD500FDAE11 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		FA81E5DA22345AD600FDAE11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81E5D822345AD600FDAE11 /* LaunchScreen.storyboard */; };
 		FA81E5E522345AD600FDAE11 /* MicShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5E422345AD600FDAE11 /* MicShareTests.swift */; };
 		FA81E5F022345AD600FDAE11 /* MicShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5EF22345AD600FDAE11 /* MicShareUITests.swift */; };
+		FADF138022345FC000B3BF88 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FADF137F22345FC000B3BF88 /* GoogleService-Info.plist */; };
+		FBB6E80D4DADF0B6A106741B /* Pods_MicShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43611E3D2422D1A75CA22916 /* Pods_MicShare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35255FB3FF8861C28FF6C4E8 /* Pods-MicShareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShareTests.release.xcconfig"; path = "Target Support Files/Pods-MicShareTests/Pods-MicShareTests.release.xcconfig"; sourceTree = "<group>"; };
+		43611E3D2422D1A75CA22916 /* Pods_MicShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5229178109BE5C36CC8982AD /* Pods-MicShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShare.debug.xcconfig"; path = "Target Support Files/Pods-MicShare/Pods-MicShare.debug.xcconfig"; sourceTree = "<group>"; };
+		91E296F4D8BA6514B4106EBD /* Pods_MicShareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicShareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE840442639D2F32DE0DE78F /* Pods-MicShareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShareUITests.release.xcconfig"; path = "Target Support Files/Pods-MicShareUITests/Pods-MicShareUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AEAB3693251279DBBA717F78 /* Pods_MicShareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicShareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFC38E8C803149FBF4BB094 /* Pods-MicShareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShareTests.debug.xcconfig"; path = "Target Support Files/Pods-MicShareTests/Pods-MicShareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC8110656E014A589679EEC9 /* Pods-MicShareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShareUITests.debug.xcconfig"; path = "Target Support Files/Pods-MicShareUITests/Pods-MicShareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE73F6346BFB38B68DDAC4F9 /* Pods-MicShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShare.release.xcconfig"; path = "Target Support Files/Pods-MicShare/Pods-MicShare.release.xcconfig"; sourceTree = "<group>"; };
 		FA81E5CC22345AD500FDAE11 /* MicShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA81E5D122345AD500FDAE11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,7 @@
 		FA81E5EB22345AD600FDAE11 /* MicShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA81E5EF22345AD600FDAE11 /* MicShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicShareUITests.swift; sourceTree = "<group>"; };
 		FA81E5F122345AD600FDAE11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADF137F22345FC000B3BF88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB6E80D4DADF0B6A106741B /* Pods_MicShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C417A8A8A176365A28D2F8F /* Pods_MicShareTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC26B63DA6BD2F4315DAFF1 /* Pods_MicShareUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		673F31973D0AE3236096A800 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5229178109BE5C36CC8982AD /* Pods-MicShare.debug.xcconfig */,
+				EE73F6346BFB38B68DDAC4F9 /* Pods-MicShare.release.xcconfig */,
+				BBFC38E8C803149FBF4BB094 /* Pods-MicShareTests.debug.xcconfig */,
+				35255FB3FF8861C28FF6C4E8 /* Pods-MicShareTests.release.xcconfig */,
+				EC8110656E014A589679EEC9 /* Pods-MicShareUITests.debug.xcconfig */,
+				AE840442639D2F32DE0DE78F /* Pods-MicShareUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77ECAB3AC8339ACAA0DD119A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43611E3D2422D1A75CA22916 /* Pods_MicShare.framework */,
+				91E296F4D8BA6514B4106EBD /* Pods_MicShareTests.framework */,
+				AEAB3693251279DBBA717F78 /* Pods_MicShareUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA81E5C322345AD400FDAE11 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				FA81E5E322345AD600FDAE11 /* MicShareTests */,
 				FA81E5EE22345AD600FDAE11 /* MicShareUITests */,
 				FA81E5CD22345AD500FDAE11 /* Products */,
+				673F31973D0AE3236096A800 /* Pods */,
+				77ECAB3AC8339ACAA0DD119A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +145,7 @@
 				FA81E5D622345AD600FDAE11 /* Assets.xcassets */,
 				FA81E5D822345AD600FDAE11 /* LaunchScreen.storyboard */,
 				FA81E5DB22345AD600FDAE11 /* Info.plist */,
+				FADF137F22345FC000B3BF88 /* GoogleService-Info.plist */,
 			);
 			path = MicShare;
 			sourceTree = "<group>";
@@ -132,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA81E5F422345AD600FDAE11 /* Build configuration list for PBXNativeTarget "MicShare" */;
 			buildPhases = (
+				8DCE1BFB77CFA231C51A051C /* [CP] Check Pods Manifest.lock */,
 				FA81E5C822345AD500FDAE11 /* Sources */,
 				FA81E5C922345AD500FDAE11 /* Frameworks */,
 				FA81E5CA22345AD500FDAE11 /* Resources */,
+				34DE3189FAAD4795EB7450AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA81E5F722345AD600FDAE11 /* Build configuration list for PBXNativeTarget "MicShareTests" */;
 			buildPhases = (
+				01E8ED8209783806C6B69515 /* [CP] Check Pods Manifest.lock */,
 				FA81E5DC22345AD600FDAE11 /* Sources */,
 				FA81E5DD22345AD600FDAE11 /* Frameworks */,
 				FA81E5DE22345AD600FDAE11 /* Resources */,
@@ -167,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA81E5FA22345AD600FDAE11 /* Build configuration list for PBXNativeTarget "MicShareUITests" */;
 			buildPhases = (
+				C6EF3F3A0A430C61ABBBE926 /* [CP] Check Pods Manifest.lock */,
 				FA81E5E722345AD600FDAE11 /* Sources */,
 				FA81E5E822345AD600FDAE11 /* Frameworks */,
 				FA81E5E922345AD600FDAE11 /* Resources */,
@@ -230,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA81E5DA22345AD600FDAE11 /* LaunchScreen.storyboard in Resources */,
+				FADF138022345FC000B3BF88 /* GoogleService-Info.plist in Resources */,
 				FA81E5D722345AD600FDAE11 /* Assets.xcassets in Resources */,
 				FA81E5D522345AD500FDAE11 /* Main.storyboard in Resources */,
 			);
@@ -250,6 +298,93 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01E8ED8209783806C6B69515 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicShareTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34DE3189FAAD4795EB7450AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicShare/Pods-MicShare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MicShare/Pods-MicShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DCE1BFB77CFA231C51A051C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicShare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6EF3F3A0A430C61ABBBE926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicShareUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA81E5C822345AD500FDAE11 /* Sources */ = {
@@ -428,6 +563,7 @@
 		};
 		FA81E5F522345AD600FDAE11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5229178109BE5C36CC8982AD /* Pods-MicShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +582,7 @@
 		};
 		FA81E5F622345AD600FDAE11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE73F6346BFB38B68DDAC4F9 /* Pods-MicShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +601,7 @@
 		};
 		FA81E5F822345AD600FDAE11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBFC38E8C803149FBF4BB094 /* Pods-MicShareTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +623,7 @@
 		};
 		FA81E5F922345AD600FDAE11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35255FB3FF8861C28FF6C4E8 /* Pods-MicShareTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +645,7 @@
 		};
 		FA81E5FB22345AD600FDAE11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8110656E014A589679EEC9 /* Pods-MicShareUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +666,7 @@
 		};
 		FA81E5FC22345AD600FDAE11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE840442639D2F32DE0DE78F /* Pods-MicShareUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
