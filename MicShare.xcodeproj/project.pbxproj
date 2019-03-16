@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2EC26B63DA6BD2F4315DAFF1 /* Pods_MicShareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAB3693251279DBBA717F78 /* Pods_MicShareUITests.framework */; };
 		6C417A8A8A176365A28D2F8F /* Pods_MicShareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E296F4D8BA6514B4106EBD /* Pods_MicShareTests.framework */; };
+		88E18D0F2234AC52004419CB /* fuck.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E18D0E2234AC51004419CB /* fuck.png */; };
 		FA81E5D022345AD500FDAE11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */; };
 		FA81E5D222345AD500FDAE11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5D122345AD500FDAE11 /* ViewController.swift */; };
 		FA81E5D522345AD500FDAE11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81E5D322345AD500FDAE11 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		35255FB3FF8861C28FF6C4E8 /* Pods-MicShareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShareTests.release.xcconfig"; path = "Target Support Files/Pods-MicShareTests/Pods-MicShareTests.release.xcconfig"; sourceTree = "<group>"; };
 		43611E3D2422D1A75CA22916 /* Pods_MicShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5229178109BE5C36CC8982AD /* Pods-MicShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShare.debug.xcconfig"; path = "Target Support Files/Pods-MicShare/Pods-MicShare.debug.xcconfig"; sourceTree = "<group>"; };
+		88E18D0E2234AC51004419CB /* fuck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fuck.png; sourceTree = "<group>"; };
 		91E296F4D8BA6514B4106EBD /* Pods_MicShareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicShareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE840442639D2F32DE0DE78F /* Pods-MicShareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShareUITests.release.xcconfig"; path = "Target Support Files/Pods-MicShareUITests/Pods-MicShareUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AEAB3693251279DBBA717F78 /* Pods_MicShareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicShareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */,
+				88E18D0E2234AC51004419CB /* fuck.png */,
 				FA81E5D122345AD500FDAE11 /* ViewController.swift */,
 				FA81E5D322345AD500FDAE11 /* Main.storyboard */,
 				FA81E5D622345AD600FDAE11 /* Assets.xcassets */,
@@ -180,6 +183,7 @@
 				FA81E5C922345AD500FDAE11 /* Frameworks */,
 				FA81E5CA22345AD500FDAE11 /* Resources */,
 				34DE3189FAAD4795EB7450AB /* [CP] Embed Pods Frameworks */,
+				9EC21136BC421B191D94C985 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA81E5DA22345AD600FDAE11 /* LaunchScreen.storyboard in Resources */,
+				88E18D0F2234AC52004419CB /* fuck.png in Resources */,
 				FADF138022345FC000B3BF88 /* GoogleService-Info.plist in Resources */,
 				FA81E5D722345AD600FDAE11 /* Assets.xcassets in Resources */,
 				FA81E5D522345AD500FDAE11 /* Main.storyboard in Resources */,
@@ -325,9 +330,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MicShare/Pods-MicShare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -335,9 +348,17 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -364,6 +385,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC21136BC421B191D94C985 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicShare/Pods-MicShare-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MicShare/Pods-MicShare-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C6EF3F3A0A430C61ABBBE926 /* [CP] Check Pods Manifest.lock */ = {

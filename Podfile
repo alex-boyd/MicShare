@@ -9,6 +9,9 @@ target 'MicShare' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
+pod 'FirebaseUI'
+pod 'Firebase/Auth'
+pod 'Firebase/Storage'
 
   target 'MicShareTests' do
     inherit! :search_paths
