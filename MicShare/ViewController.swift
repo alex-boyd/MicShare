@@ -33,6 +33,7 @@ class ViewController:
         {
             numberOfRecordings += 1
             let filename = getDirectory().appendingPathComponent("\(numberOfRecordings).m4a")
+
             let settings =
             [
                 AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
@@ -122,7 +123,6 @@ class ViewController:
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let path = getDirectory().appendingPathComponent("\(indexPath.row + 1).m4a")
-        let path2 = URL(string:"http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3")
 
         do
         {
@@ -131,6 +131,8 @@ class ViewController:
             audioPlayer.prepareToPlay()
             audioPlayer.delegate = self
             audioPlayer.play()
+            print("inrecordblock")
+
 
             
             //self.audioPlayer.delegate = self
