@@ -35,9 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storage = Storage.storage()
         
         let storageRef = storage.reference()
-        let fuckRef = storageRef.child("images/test.png")
+        let fuckRef = storageRef.child("images/fuck.png")
         
-        let localFile = URL(fileReferenceLiteralResourceName: "test.png")
+        let localFile = URL(fileReferenceLiteralResourceName: "fuck.png")
         print("localFile: ",localFile)
         let uploadTask = fuckRef.putFile(from: localFile, metadata: nil) { metadata, error in
             guard let metadata = metadata else {
