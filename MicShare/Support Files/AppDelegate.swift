@@ -13,63 +13,53 @@ import Firebase
 import FirebaseFirestore
 import FirebaseUI
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+//    var fm: FirebaseModel!
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        FirebaseApp.configure()
-        
-        // authentication init
-        Auth.auth().createUser(withEmail: "test@fuck.com", password: "12345678") { authResult, error in
-            // ...
-            print(authResult)
-        }
-        
-        // file storage init
-        let storage = Storage.storage()
-        
-        let storageRef = storage.reference()
-        let fuckRef = storageRef.child("images/fuck.png")
-        
-        let localFile = URL(fileReferenceLiteralResourceName: "fuck.png")
-        print("localFile: ",localFile)
-        let uploadTask = fuckRef.putFile(from: localFile, metadata: nil) { metadata, error in
-            guard let metadata = metadata else {
-                // Uh-oh, an error occurred!
-                print(error)
-                return
-            }
-            // Metadata contains file metadata such as size, content-type.
-            let size = metadata.size
-            // You can also access to download URL after upload.
-            storageRef.downloadURL { (url, error) in
-                guard let downloadURL = url else {
-                    // Uh-oh, an error occurred!
-                    print(error)
-                    return
-                }
-            }
-        }
-        
-        // firestore database init
-        let db = Firestore.firestore()
-
-        db.collection("tests").document("oh").setData([
-            "fuck": "this"
-        ]) { (error:Error?) in
-            if let error = error {
-                print("\(error.localizedDescription)")
-            } else {
-                print("Document was successfully created and written.")
-            }
-        }
-        
+//
+//        // file storage init
+//        let storageRef = fm.storage.reference()
+//        let fuckRef = storageRef.child("texts/text.txt")
+//
+//        let localFile = URL(fileReferenceLiteralResourceName: "text.txt")
+//        print("localFile: ",localFile)
+//        let uploadTask = fuckRef.putFile(from: localFile, metadata: nil) { metadata, error in
+//            guard let metadata = metadata else {
+//                // Uh-oh, an error occurred!
+//                print(error)
+//                return
+//            }
+//            // Metadata contains file metadata such as size, content-type.
+//            let size = metadata.size
+//            // You can also access to download URL after upload.
+//            storageRef.downloadURL { (url, error) in
+//                guard let downloadURL = url else {
+//                    // Uh-oh, an error occurred!
+//                    print(error)
+//                    return
+//                }
+//            }
+//        }
+//
+//        // firestore database init
+//        fm.firestore.collection("tests").document("oh").setData([
+//            "fuck": "this"
+//        ]) { (error:Error?) in
+//            if let error = error {
+//                print("\(error.localizedDescription)")
+//            } else {
+//                print("Document was successfully created and written.")
+//            }
+//        }
+//
         return true
     }
 

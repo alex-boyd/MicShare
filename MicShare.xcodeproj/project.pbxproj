@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		2EC26B63DA6BD2F4315DAFF1 /* Pods_MicShareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAB3693251279DBBA717F78 /* Pods_MicShareUITests.framework */; };
 		6C417A8A8A176365A28D2F8F /* Pods_MicShareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E296F4D8BA6514B4106EBD /* Pods_MicShareTests.framework */; };
-		88E18D0F2234AC52004419CB /* fuck.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E18D0E2234AC51004419CB /* fuck.png */; };
+		88AA174D2246C0D100ACB94A /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA174C2246C0D100ACB94A /* FirebaseModel.swift */; };
+		88AA17532246C9BA00ACB94A /* RecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA17522246C9BA00ACB94A /* RecordingModel.swift */; };
+		88AA17552246CD2900ACB94A /* RecordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA17542246CD2900ACB94A /* RecordingController.swift */; };
+		88AE2FA72246DAEE00B6B583 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE2FA62246DAED00B6B583 /* FirebaseController.swift */; };
+		88AE2FA92246E57C00B6B583 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE2FA82246E57C00B6B583 /* LoginViewController.swift */; };
+		88D26CEC2246F0100071BC16 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D26CEB2246F0100071BC16 /* FeedViewController.swift */; };
+		88D26CEE2246FCBA0071BC16 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D26CED2246FCBA0071BC16 /* LikesViewController.swift */; };
+		88D26CF02246FCE60071BC16 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D26CEF2246FCE60071BC16 /* ProfileViewController.swift */; };
 		FA81E5D022345AD500FDAE11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */; };
 		FA81E5D222345AD500FDAE11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5D122345AD500FDAE11 /* ViewController.swift */; };
 		FA81E5D522345AD500FDAE11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81E5D322345AD500FDAE11 /* Main.storyboard */; };
@@ -42,7 +49,14 @@
 		35255FB3FF8861C28FF6C4E8 /* Pods-MicShareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShareTests.release.xcconfig"; path = "Target Support Files/Pods-MicShareTests/Pods-MicShareTests.release.xcconfig"; sourceTree = "<group>"; };
 		43611E3D2422D1A75CA22916 /* Pods_MicShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5229178109BE5C36CC8982AD /* Pods-MicShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShare.debug.xcconfig"; path = "Target Support Files/Pods-MicShare/Pods-MicShare.debug.xcconfig"; sourceTree = "<group>"; };
-		88E18D0E2234AC51004419CB /* fuck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fuck.png; sourceTree = "<group>"; };
+		88AA174C2246C0D100ACB94A /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
+		88AA17522246C9BA00ACB94A /* RecordingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingModel.swift; sourceTree = "<group>"; };
+		88AA17542246CD2900ACB94A /* RecordingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingController.swift; sourceTree = "<group>"; };
+		88AE2FA62246DAED00B6B583 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		88AE2FA82246E57C00B6B583 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		88D26CEB2246F0100071BC16 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		88D26CED2246FCBA0071BC16 /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
+		88D26CEF2246FCE60071BC16 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		91E296F4D8BA6514B4106EBD /* Pods_MicShareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicShareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE840442639D2F32DE0DE78F /* Pods-MicShareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShareUITests.release.xcconfig"; path = "Target Support Files/Pods-MicShareUITests/Pods-MicShareUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AEAB3693251279DBBA717F78 /* Pods_MicShareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicShareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +130,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		88AA174E2246C8B700ACB94A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88AA17542246CD2900ACB94A /* RecordingController.swift */,
+				88AE2FA62246DAED00B6B583 /* FirebaseController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		88AA174F2246C8DC00ACB94A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA81E5D622345AD600FDAE11 /* Assets.xcassets */,
+				FA81E5DB22345AD600FDAE11 /* Info.plist */,
+				FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */,
+				FADF137F22345FC000B3BF88 /* GoogleService-Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		88AA17502246C8E500ACB94A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88AA174C2246C0D100ACB94A /* FirebaseModel.swift */,
+				88AA17522246C9BA00ACB94A /* RecordingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88AA17512246C91C00ACB94A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA81E5D322345AD500FDAE11 /* Main.storyboard */,
+				FA81E5D822345AD600FDAE11 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88AE2FAA2246E59700B6B583 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA81E5D122345AD500FDAE11 /* ViewController.swift */,
+				88AE2FA82246E57C00B6B583 /* LoginViewController.swift */,
+				88D26CEB2246F0100071BC16 /* FeedViewController.swift */,
+				88D26CED2246FCBA0071BC16 /* LikesViewController.swift */,
+				88D26CEF2246FCE60071BC16 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		FA81E5C322345AD400FDAE11 = {
 			isa = PBXGroup;
 			children = (
@@ -141,14 +205,11 @@
 		FA81E5CE22345AD500FDAE11 /* MicShare */ = {
 			isa = PBXGroup;
 			children = (
-				FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */,
-				88E18D0E2234AC51004419CB /* fuck.png */,
-				FA81E5D122345AD500FDAE11 /* ViewController.swift */,
-				FA81E5D322345AD500FDAE11 /* Main.storyboard */,
-				FA81E5D622345AD600FDAE11 /* Assets.xcassets */,
-				FA81E5D822345AD600FDAE11 /* LaunchScreen.storyboard */,
-				FA81E5DB22345AD600FDAE11 /* Info.plist */,
-				FADF137F22345FC000B3BF88 /* GoogleService-Info.plist */,
+				88AA17502246C8E500ACB94A /* Models */,
+				88AA17512246C91C00ACB94A /* Views */,
+				88AA174E2246C8B700ACB94A /* Controllers */,
+				88AE2FAA2246E59700B6B583 /* ViewControllers */,
+				88AA174F2246C8DC00ACB94A /* Support Files */,
 			);
 			path = MicShare;
 			sourceTree = "<group>";
@@ -281,7 +342,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA81E5DA22345AD600FDAE11 /* LaunchScreen.storyboard in Resources */,
-				88E18D0F2234AC52004419CB /* fuck.png in Resources */,
 				FADF138022345FC000B3BF88 /* GoogleService-Info.plist in Resources */,
 				FA81E5D722345AD600FDAE11 /* Assets.xcassets in Resources */,
 				FA81E5D522345AD500FDAE11 /* Main.storyboard in Resources */,
@@ -450,7 +510,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88AE2FA92246E57C00B6B583 /* LoginViewController.swift in Sources */,
+				88AE2FA72246DAEE00B6B583 /* FirebaseController.swift in Sources */,
+				88D26CF02246FCE60071BC16 /* ProfileViewController.swift in Sources */,
+				88AA174D2246C0D100ACB94A /* FirebaseModel.swift in Sources */,
+				88AA17532246C9BA00ACB94A /* RecordingModel.swift in Sources */,
 				FA81E5D222345AD500FDAE11 /* ViewController.swift in Sources */,
+				88D26CEE2246FCBA0071BC16 /* LikesViewController.swift in Sources */,
+				88AA17552246CD2900ACB94A /* RecordingController.swift in Sources */,
+				88D26CEC2246F0100071BC16 /* FeedViewController.swift in Sources */,
 				FA81E5D022345AD500FDAE11 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,7 +695,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8625DGRLZL;
-				INFOPLIST_FILE = MicShare/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MicShare/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,7 +714,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8625DGRLZL;
-				INFOPLIST_FILE = MicShare/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MicShare/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
