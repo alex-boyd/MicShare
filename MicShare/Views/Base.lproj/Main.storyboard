@@ -121,42 +121,55 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="Wp9-SP-DzM"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEB-Fx-HfM" userLabel="Submit Button">
-                                <rect key="frame" x="163" y="198" width="49" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEB-Fx-HfM" userLabel="Create Account Button">
+                                <rect key="frame" x="111" y="198" width="132" height="30"/>
                                 <color key="backgroundColor" red="0.64623304307597562" green="0.76587002410077398" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Submit"/>
+                                <state key="normal" title="Create Account"/>
                                 <connections>
-                                    <action selector="submitUser:" destination="h4E-Os-m54" eventType="touchUpInside" id="kIU-Yu-KL1"/>
-                                    <segue destination="onw-Bp-zrz" kind="presentation" modalTransitionStyle="crossDissolve" id="V1I-KY-sfs"/>
+                                    <action selector="createAccount:" destination="h4E-Os-m54" eventType="touchUpInside" id="6M9-T0-Wem"/>
+                                    <segue destination="onw-Bp-zrz" kind="presentation" id="k75-mZ-2xV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVo-76-bpk" userLabel="Sign-in Button">
+                                <rect key="frame" x="111" y="270" width="132" height="30"/>
+                                <color key="backgroundColor" red="0.64623304309999996" green="0.76587002410000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign-in"/>
+                                <connections>
+                                    <action selector="signIn:" destination="h4E-Os-m54" eventType="touchUpInside" id="nk1-Jn-fdu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="TEB-Fx-HfM" firstAttribute="top" secondItem="L9E-3u-GNd" secondAttribute="bottom" constant="27.5" id="73j-cp-qTd"/>
+                            <constraint firstItem="jVo-76-bpk" firstAttribute="leading" secondItem="AuC-xh-PvE" secondAttribute="leading" constant="111" id="FeV-mM-mxk"/>
                             <constraint firstItem="y0N-TM-wRy" firstAttribute="top" secondItem="AuC-xh-PvE" secondAttribute="top" constant="100" id="JY2-Tf-gHO"/>
                             <constraint firstItem="L9E-3u-GNd" firstAttribute="top" secondItem="AuC-xh-PvE" secondAttribute="top" constant="100" id="K2J-If-060"/>
                             <constraint firstItem="L9E-3u-GNd" firstAttribute="leading" secondItem="AuC-xh-PvE" secondAttribute="leading" constant="50" id="QfR-uk-LkA"/>
                             <constraint firstItem="AuC-xh-PvE" firstAttribute="trailing" secondItem="y0N-TM-wRy" secondAttribute="trailing" constant="50" id="VN1-W7-v9u"/>
-                            <constraint firstItem="TEB-Fx-HfM" firstAttribute="top" secondItem="AuC-xh-PvE" secondAttribute="top" constant="178" id="gIf-Es-4Nk"/>
-                            <constraint firstItem="AuC-xh-PvE" firstAttribute="trailing" secondItem="TEB-Fx-HfM" secondAttribute="trailing" constant="163" id="gJx-xU-FdU"/>
-                            <constraint firstItem="TEB-Fx-HfM" firstAttribute="leading" secondItem="AuC-xh-PvE" secondAttribute="leading" constant="163" id="h9s-gD-ShV"/>
+                            <constraint firstItem="AuC-xh-PvE" firstAttribute="trailing" secondItem="jVo-76-bpk" secondAttribute="trailing" constant="132" id="XPp-ZE-dnN"/>
+                            <constraint firstItem="TEB-Fx-HfM" firstAttribute="leading" secondItem="AuC-xh-PvE" secondAttribute="leading" constant="111" id="emv-zh-Hbu"/>
+                            <constraint firstItem="jVo-76-bpk" firstAttribute="top" secondItem="TEB-Fx-HfM" secondAttribute="bottom" constant="42" id="j1s-hv-oii"/>
                             <constraint firstItem="AuC-xh-PvE" firstAttribute="bottom" secondItem="TEB-Fx-HfM" secondAttribute="bottom" constant="439" id="nwC-ho-fp5"/>
+                            <constraint firstItem="AuC-xh-PvE" firstAttribute="bottom" secondItem="jVo-76-bpk" secondAttribute="bottom" constant="367" id="oFC-hv-xtF"/>
+                            <constraint firstItem="AuC-xh-PvE" firstAttribute="trailing" secondItem="TEB-Fx-HfM" secondAttribute="trailing" constant="132" id="prv-hi-o1W"/>
+                            <constraint firstItem="AuC-xh-PvE" firstAttribute="bottom" secondItem="TEB-Fx-HfM" secondAttribute="bottom" constant="439" id="qgC-da-x78"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AuC-xh-PvE"/>
                     </view>
                     <connections>
                         <outlet property="passwordField" destination="KCm-Zf-reg" id="wYO-mN-g6M"/>
                         <outlet property="usernameField" destination="yOO-Aw-jV6" id="7wA-mj-ImB"/>
+                        <segue destination="onw-Bp-zrz" kind="presentation" identifier="onLoginSuccess" id="Lkp-dE-MDh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bR8-Lb-Ucz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-636" y="134"/>
+            <point key="canvasLocation" x="-636" y="133.5832083958021"/>
         </scene>
         <!--Profile View Contoller-->
         <scene sceneID="R9g-6D-5Df">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fqv-Ab-s0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="M9x-hZ-SNN" userLabel="Profile View Contoller" customClass="ProfileViewController" customModule="MicShare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Daj-Kz-eow">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -166,13 +179,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="PHb-40-QQV"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqv-Ab-s0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="354" y="1621"/>
         </scene>
         <!--Likes View Controller-->
         <scene sceneID="AAq-Ox-oij">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qGn-wt-xSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="zoF-bk-55c" userLabel="Likes View Controller" customClass="LikesViewController" customModule="MicShare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bn8-ZF-cRi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -182,13 +195,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Likes" id="vgs-gg-1WF"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qGn-wt-xSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-482" y="1621"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="Anb-Qo-4sP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4A3-rd-Ady" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="k0I-e9-RZD" userLabel="Feed View Controller" customClass="FeedViewController" customModule="MicShare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wwv-dd-BtD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -199,6 +212,7 @@
                     <tabBarItem key="tabBarItem" title="Feed" id="ZaY-p9-JJF" userLabel="Feed Icon"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4A3-rd-Ady" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1282.4000000000001" y="1620.5397301349326"/>
         </scene>
@@ -229,5 +243,8 @@
             <point key="canvasLocation" x="-481" y="860"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="k75-mZ-2xV"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

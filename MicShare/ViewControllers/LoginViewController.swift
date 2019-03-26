@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
-    @IBAction func submitUser(_ sender: Any) {
+    @IBAction func createAccount(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
         let fm = FirebaseModel.i
@@ -26,8 +26,23 @@ class LoginViewController: UIViewController {
                 print(error!)
             }
         }
-        
     }
+    
+    
+    @IBAction func signIn(_ sender: Any) {
+        let username = usernameField.text!
+        let password = passwordField.text!
+        let fm = FirebaseModel.i
+        fm.auth.signIn(withEmail: username, password: password) { [weak self] user, error in
+            guard let strongSelf = self else { return }
+            // ...
+            if(user != nil) {
+                print(user)
+                self?.performSegue(withIdentifier: "onLoginSuccess", sender: self)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
