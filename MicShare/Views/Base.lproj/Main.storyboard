@@ -127,7 +127,6 @@
                                 <state key="normal" title="Create Account"/>
                                 <connections>
                                     <action selector="createAccount:" destination="h4E-Os-m54" eventType="touchUpInside" id="6M9-T0-Wem"/>
-                                    <segue destination="onw-Bp-zrz" kind="presentation" id="k75-mZ-2xV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVo-76-bpk" userLabel="Sign-in Button">
@@ -174,14 +173,40 @@
                     <view key="view" contentMode="scaleToFill" id="Daj-Kz-eow">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uEn-Y7-1gb" userLabel="Profile Picture">
+                                <rect key="frame" x="67" y="69" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkN-cc-ahR">
+                                <rect key="frame" x="67" y="236" width="209" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.024170271520000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Upload profile picture"/>
+                                <connections>
+                                    <action selector="showAlert" destination="M9x-hZ-SNN" eventType="touchUpInside" id="qMd-Tz-sFV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.088112482917661605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uEn-Y7-1gb" firstAttribute="leading" secondItem="XGQ-d8-3FM" secondAttribute="leading" constant="67" id="7wr-BU-eV5"/>
+                            <constraint firstItem="rkN-cc-ahR" firstAttribute="leading" secondItem="XGQ-d8-3FM" secondAttribute="leading" constant="67" id="IfO-j4-oZN"/>
+                            <constraint firstItem="XGQ-d8-3FM" firstAttribute="trailing" secondItem="rkN-cc-ahR" secondAttribute="trailing" constant="99" id="J71-vo-H2g"/>
+                            <constraint firstItem="uEn-Y7-1gb" firstAttribute="top" secondItem="XGQ-d8-3FM" secondAttribute="top" constant="49" id="TSL-bC-ZXg"/>
+                            <constraint firstItem="XGQ-d8-3FM" firstAttribute="trailing" secondItem="uEn-Y7-1gb" secondAttribute="trailing" constant="68" id="bca-1O-sJR"/>
+                            <constraint firstItem="rkN-cc-ahR" firstAttribute="top" secondItem="uEn-Y7-1gb" secondAttribute="bottom" constant="39" id="lox-Ch-YdM"/>
+                            <constraint firstItem="rkN-cc-ahR" firstAttribute="top" secondItem="uEn-Y7-1gb" secondAttribute="bottom" constant="39" id="pRA-3d-Urx"/>
+                            <constraint firstItem="XGQ-d8-3FM" firstAttribute="bottom" secondItem="rkN-cc-ahR" secondAttribute="bottom" constant="352" id="psK-1n-2fw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XGQ-d8-3FM"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="PHb-40-QQV"/>
+                    <connections>
+                        <outlet property="profilePicView" destination="uEn-Y7-1gb" id="HbL-hW-fat"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqv-Ab-s0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="1621"/>
+            <point key="canvasLocation" x="352.80000000000001" y="1620.5397301349326"/>
         </scene>
         <!--Likes View Controller-->
         <scene sceneID="AAq-Ox-oij">
@@ -243,8 +268,5 @@
             <point key="canvasLocation" x="-481" y="860"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="k75-mZ-2xV"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

@@ -20,7 +20,22 @@ class LoginViewController: UIViewController {
         let fm = FirebaseModel.i
         fm.auth.createUser(withEmail: username, password: password) { authResult, error in
             if(authResult != nil) {
-                print(authResult!)
+                print(authResult!.user.uid)
+                fm.firestore.collection("users").document(authResult!.user.uid).setData(
+                    [
+                        "online":true,
+                        "recordings":[]
+                    ])
+                fm.auth.signIn(withEmail: username, password: password) { [weak self] user, error in
+                    guard let strongSelf = self else { return }
+                    // ...
+                    if(user != nil) {
+                        print("Current new account:")
+                        print(fm.auth.currentUser!.uid)
+                        self?.performSegue(withIdentifier: "onLoginSuccess", sender: self)
+                    }
+                }
+                
             }
             if(error != nil) {
                 print(error!)
@@ -37,7 +52,8 @@ class LoginViewController: UIViewController {
             guard let strongSelf = self else { return }
             // ...
             if(user != nil) {
-                print(user)
+                print("Current user:")
+                print(fm.auth.currentUser!.uid)
                 self?.performSegue(withIdentifier: "onLoginSuccess", sender: self)
             }
         }
