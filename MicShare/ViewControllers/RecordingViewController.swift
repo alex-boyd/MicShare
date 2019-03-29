@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordingViewController.swift
 //  MicShare
 //
 //  Created by alex on 3/9/19.
@@ -19,8 +19,7 @@ class ViewController:
     
     var rm : RecordingModel!
     var rc : RecordingController!
-    var fm : FirebaseModel!
-    var fc : FirebaseController!
+    
     
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var buttonLabel: UIButton!
@@ -36,8 +35,7 @@ class ViewController:
         rm = RecordingModel()
         rc = RecordingController(model: rm, view: self)
         
-        fm = FirebaseModel.i
-        fc = FirebaseController(model: fm, view: self)
+        
     }
     
     //gets path to directory

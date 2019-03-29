@@ -9,6 +9,7 @@
 import Foundation
 import AVFoundation
 import UIKit
+import FirebaseFirestore
 
 
 class RecordingController
@@ -16,10 +17,16 @@ class RecordingController
     var m: RecordingModel!
     var v: ViewController!
     
+    var fm : FirebaseModel!
+    var fc : FirebaseController!
+    
     init(model: RecordingModel, view: ViewController)
     {
         m = model
         v = view
+        
+        fm = FirebaseModel.i
+        fc = FirebaseController(model: fm, view: v)
     }
     
     func record()
@@ -57,6 +64,20 @@ class RecordingController
             //stop recording
             m.audioRecorder.stop()
             m.audioRecorder = nil
+            
+            // connecting the recording to firebase
+            let filename = v.getDirectory().appendingPathComponent("\(m.numberOfRecordings).m4a")
+            // generate a random id for the recording
+            let recordingId = UUID().uuidString
+            
+            let ref = fm.storage.reference().child("/recordings/" + recordingId + "/" + "\(m.numberOfRecordings).m4a")
+            ref.putFile(from: filename)
+            
+            let currentUserUid = fm.auth.currentUser!.uid
+            fm.firestore.collection("users").document(currentUserUid).updateData(
+                [
+                    "recordings" : FieldValue.arrayUnion([recordingId])
+                ])
         
             UserDefaults.standard.set(m.numberOfRecordings, forKey: "myRecordings")
         

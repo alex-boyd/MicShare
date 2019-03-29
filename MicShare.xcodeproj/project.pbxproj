@@ -18,7 +18,7 @@
 		88D26CEE2246FCBA0071BC16 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D26CED2246FCBA0071BC16 /* LikesViewController.swift */; };
 		88D26CF02246FCE60071BC16 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D26CEF2246FCE60071BC16 /* ProfileViewController.swift */; };
 		FA81E5D022345AD500FDAE11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */; };
-		FA81E5D222345AD500FDAE11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5D122345AD500FDAE11 /* ViewController.swift */; };
+		FA81E5D222345AD500FDAE11 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81E5D122345AD500FDAE11 /* RecordingViewController.swift */; };
 		FA81E5D522345AD500FDAE11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81E5D322345AD500FDAE11 /* Main.storyboard */; };
 		FA81E5D722345AD600FDAE11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA81E5D622345AD600FDAE11 /* Assets.xcassets */; };
 		FA81E5DA22345AD600FDAE11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81E5D822345AD600FDAE11 /* LaunchScreen.storyboard */; };
@@ -65,7 +65,7 @@
 		EE73F6346BFB38B68DDAC4F9 /* Pods-MicShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicShare.release.xcconfig"; path = "Target Support Files/Pods-MicShare/Pods-MicShare.release.xcconfig"; sourceTree = "<group>"; };
 		FA81E5CC22345AD500FDAE11 /* MicShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA81E5CF22345AD500FDAE11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA81E5D122345AD500FDAE11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA81E5D122345AD500FDAE11 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 		FA81E5D422345AD500FDAE11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA81E5D622345AD600FDAE11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA81E5D922345AD600FDAE11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		88AE2FAA2246E59700B6B583 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA81E5D122345AD500FDAE11 /* ViewController.swift */,
+				FA81E5D122345AD500FDAE11 /* RecordingViewController.swift */,
 				88AE2FA82246E57C00B6B583 /* LoginViewController.swift */,
 				88D26CEB2246F0100071BC16 /* FeedViewController.swift */,
 				88D26CED2246FCBA0071BC16 /* LikesViewController.swift */,
@@ -515,7 +515,7 @@
 				88D26CF02246FCE60071BC16 /* ProfileViewController.swift in Sources */,
 				88AA174D2246C0D100ACB94A /* FirebaseModel.swift in Sources */,
 				88AA17532246C9BA00ACB94A /* RecordingModel.swift in Sources */,
-				FA81E5D222345AD500FDAE11 /* ViewController.swift in Sources */,
+				FA81E5D222345AD500FDAE11 /* RecordingViewController.swift in Sources */,
 				88D26CEE2246FCBA0071BC16 /* LikesViewController.swift in Sources */,
 				88AA17552246CD2900ACB94A /* RecordingController.swift in Sources */,
 				88D26CEC2246F0100071BC16 /* FeedViewController.swift in Sources */,
