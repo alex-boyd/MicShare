@@ -231,20 +231,63 @@
                     <view key="view" contentMode="scaleToFill" id="wwv-dd-BtD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="0.024170271520000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="Feed" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hLi-76-YJ4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50.5" id="6k8-HT-tfw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eB4-TQ-8n7">
+                                <rect key="frame" x="0.0" y="78.5" width="375" height="589.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="jD7-jT-Qbb">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jD7-jT-Qbb" id="CV6-R1-aJ3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="k0I-e9-RZD" id="TN1-PA-fXs"/>
+                                    <outlet property="delegate" destination="k0I-e9-RZD" id="EcM-7n-DzU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hLi-76-YJ4" firstAttribute="trailing" secondItem="jFo-H4-wHN" secondAttribute="trailing" id="0lI-VI-fyl"/>
+                            <constraint firstItem="eB4-TQ-8n7" firstAttribute="leading" secondItem="hLi-76-YJ4" secondAttribute="leading" id="YlK-YG-WfI"/>
+                            <constraint firstItem="hLi-76-YJ4" firstAttribute="leading" secondItem="jFo-H4-wHN" secondAttribute="leading" id="YuI-t2-mXi"/>
+                            <constraint firstItem="hLi-76-YJ4" firstAttribute="top" secondItem="wwv-dd-BtD" secondAttribute="topMargin" id="c6o-me-zXt"/>
+                            <constraint firstItem="eB4-TQ-8n7" firstAttribute="trailing" secondItem="hLi-76-YJ4" secondAttribute="trailing" id="frv-dl-fMi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="eB4-TQ-8n7" secondAttribute="bottom" constant="-50" id="hIk-jx-gGE"/>
+                            <constraint firstItem="eB4-TQ-8n7" firstAttribute="top" secondItem="hLi-76-YJ4" secondAttribute="bottom" constant="8" symbolic="YES" id="iDZ-fl-MUo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jFo-H4-wHN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" id="ZaY-p9-JJF" userLabel="Feed Icon"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="header" destination="hLi-76-YJ4" id="eqf-cK-6XZ"/>
+                        <outlet property="tableView" destination="eB4-TQ-8n7" id="nf6-Ae-MxK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4A3-rd-Ady" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1282.4000000000001" y="1620.5397301349326"/>
+            <point key="canvasLocation" x="-1319.2" y="1620.5397301349326"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fcC-U5-daf">
             <objects>
                 <tabBarController id="onw-Bp-zrz" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q8F-v3-wAU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
