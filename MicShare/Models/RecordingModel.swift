@@ -19,6 +19,8 @@ class RecordingModel
     var audioPlayer: AVAudioPlayer! = nil
     
     var numberOfRecordings: Int = 0
+    
+    static let i = RecordingModel()
 
     
     init()

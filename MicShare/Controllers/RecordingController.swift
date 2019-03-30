@@ -15,18 +15,22 @@ import FirebaseFirestore
 class RecordingController
 {
     var m: RecordingModel!
-    var v: ViewController!
+    var v: RecordingViewController!
     
+    static let i = RecordingController()
+    
+ 
     var fm : FirebaseModel!
     var fc : FirebaseController!
     
-    init(model: RecordingModel, view: ViewController)
+    init()
     {
-        m = model
-        v = view
+        m = RecordingModel.i
+        //v = view
+        //view: ViewController
         
         fm = FirebaseModel.i
-        fc = FirebaseController(model: fm, view: v)
+        fc = FirebaseController.i
     }
     
     func record()

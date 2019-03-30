@@ -10,12 +10,16 @@ import Foundation
 
 class FirebaseController {
     var m: FirebaseModel!
-    var v: ViewController!
+    var v: RecordingViewController!
     
-    init(model: FirebaseModel, view: ViewController)
+    static let i = FirebaseController()
+
+    
+    init()
     {
-        m = model
-        v = view
+        //m = model
+        //v = view
+        m = FirebaseModel.i
     }
     
     

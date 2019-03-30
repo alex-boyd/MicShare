@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController:
+class RecordingViewController:
     UIViewController,
     AVAudioRecorderDelegate,
     AVAudioPlayerDelegate,
@@ -20,9 +20,8 @@ class ViewController:
     var rm : RecordingModel!
     var rc : RecordingController!
     
-    
-    @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var buttonLabel: UIButton!
+    @IBOutlet weak var myTableView: UITableView!
     
     @IBAction func record(_ sender: Any)
     {
@@ -32,9 +31,10 @@ class ViewController:
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        rm = RecordingModel()
-        rc = RecordingController(model: rm, view: self)
+        rm = RecordingModel.i
+        rc = RecordingController.i
         
+        rc.v = self
         
     }
     

@@ -13,7 +13,7 @@
         <!--Record View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Record View Controller" customClass="ViewController" customModule="MicShare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Record View Controller" customClass="RecordingViewController" customModule="MicShare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,10 +34,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="23b-8V-GMA"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="N2k-jP-qUh"/>
-                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nlh-gC-nt1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
@@ -47,7 +43,7 @@
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="32"/>
                                 <state key="normal" title="START RECORDING"/>
                                 <connections>
-                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubB-ir-tbl"/>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZa-6J-fWv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,8 +60,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Record" id="uFk-ic-Kiz"/>
                     <connections>
-                        <outlet property="buttonLabel" destination="Nlh-gC-nt1" id="szo-u7-m7Q"/>
-                        <outlet property="myTableView" destination="oCx-gu-JhL" id="jnl-Nb-ZQu"/>
+                        <outlet property="buttonLabel" destination="Nlh-gC-nt1" id="qcM-z3-Y25"/>
+                        <outlet property="myTableView" destination="oCx-gu-JhL" id="jCd-jc-1i6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
