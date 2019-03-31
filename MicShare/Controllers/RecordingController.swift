@@ -55,7 +55,7 @@ class RecordingController
                 m.audioRecorder = try AVAudioRecorder(url:filename, settings:settings)
                 m.audioRecorder.delegate = m!.recorderDelegate
                 m.audioRecorder.record()
-                v.buttonLabel.setTitle("STOP RECORDING", for: .normal)
+                v.buttonLabel.setTitle("Stop Recording", for: .normal)
                 
             } catch
             {
@@ -87,7 +87,7 @@ class RecordingController
         
             v.myTableView.reloadData()
         
-            v.buttonLabel.setTitle("START RECORDING", for: .normal)
+            v.buttonLabel.setTitle("Start Recording", for: .normal)
         }
     }
     
